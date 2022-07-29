@@ -1,7 +1,7 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2022-07-29 13:00:37
+#  创建时间：2022-07-29 15:02:25
 #  模版：ACL4SSR_Online
 #  节点数量：4
 #-------------------------------------------------------------#
@@ -13,9 +13,9 @@ log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
   - {"type":"vmess","name":"香港","ws-opts":{"path":"/zjejf4","headers":{"host":"ec2.kxking.top"}},"server":"18.166.75.71","port":"443","uuid":"1dbbc9e8-9af6-42d6-a622-87c957bce96d","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"kxking.ipv6d","ws-opts":{"path":"/IxGnirSPONCB","headers":{"host":"kxking.ipv6d.my.id"}},"server":"2a01:4f8:211:1e1a:face:70e:c521:1","port":"443","uuid":"ec67ddb2-5dba-4432-b990-fee721af62d4","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"韩国","ws-opts":{"path":"/ncaF9NL","headers":{"host":"test.kxking.top"}},"server":"3.36.145.124","port":"443","uuid":"de32d1bc-d5f9-4253-b98a-a48ee19302ad","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"hax2","ws-opts":{"path":"/IxGnirSPONCB","headers":{"host":"kxking.ipv6d.my.id"}},"server":"hax2.kxking.top","port":"443","uuid":"ec67ddb2-5dba-4432-b990-fee721af62d4","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"kxking.ipv6d","ws-opts":{"path":"/IxGnirSPONCB","headers":{"host":"kxking.ipv6d.my.id"}},"server":"2a01:4f8:211:1e1a:face:70e:c521:1","port":"443","uuid":"ec67ddb2-5dba-4432-b990-fee721af62d4","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -23,7 +23,9 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 香港
+      - kxking.ipv6d
       - 韩国
+      - hax2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -31,7 +33,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港
+      - kxking.ipv6d
       - 韩国
+      - hax2
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -39,28 +43,36 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港
+      - kxking.ipv6d
       - 韩国
+      - hax2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 香港
+      - kxking.ipv6d
       - 韩国
+      - hax2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 香港
+      - kxking.ipv6d
       - 韩国
+      - hax2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 香港
+      - kxking.ipv6d
       - 韩国
+      - hax2
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -68,7 +80,9 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 香港
+      - kxking.ipv6d
       - 韩国
+      - hax2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,7 +106,9 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 香港
+      - kxking.ipv6d
       - 韩国
+      - hax2
 rules:
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
