@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2022-07-30 10:20:28
+#  创建时间：2022-07-30 10:41:21
 #  模版：ACL4SSR_Online
-#  节点数量：4
+#  节点数量：2
 #-------------------------------------------------------------#
 #
 mixed-port: 7890
@@ -12,8 +12,6 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vmess","name":"香港","ws-opts":{"path":"/zjejf4","headers":{"host":"ec2.kxking.top"}},"server":"18.166.75.71","port":"443","uuid":"1dbbc9e8-9af6-42d6-a622-87c957bce96d","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"韩国","ws-opts":{"path":"/ncaF9NL","headers":{"host":"test.kxking.top"}},"server":"3.36.145.124","port":"443","uuid":"de32d1bc-d5f9-4253-b98a-a48ee19302ad","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"hax2","ws-opts":{"path":"/IxGnirSPONCB","headers":{"host":"kxking.ipv6d.my.id"}},"server":"hax2.kxking.top","port":"443","uuid":"ec67ddb2-5dba-4432-b990-fee721af62d4","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"韩国2","ws-opts":{"path":"/skdW1Jl","headers":{"host":"ltf.kxking.top"}},"server":"3.39.134.58","port":"443","uuid":"d3b69a94-0282-45bc-88fd-f87df4c453b0","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
@@ -22,8 +20,6 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 香港
-      - 韩国
       - hax2
       - 韩国2
   - name: ♻️ 自动选择
@@ -32,8 +28,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 香港
-      - 韩国
       - hax2
       - 韩国2
   - name: 🌍 国外媒体
@@ -42,8 +36,6 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港
-      - 韩国
       - hax2
       - 韩国2
   - name: 📲 电报信息
@@ -51,8 +43,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 香港
-      - 韩国
       - hax2
       - 韩国2
   - name: Ⓜ️ 微软服务
@@ -60,8 +50,6 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 香港
-      - 韩国
       - hax2
       - 韩国2
   - name: 🍎 苹果服务
@@ -69,8 +57,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 香港
-      - 韩国
       - hax2
       - 韩国2
   - name: 📢 谷歌FCM
@@ -79,8 +65,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港
-      - 韩国
       - hax2
       - 韩国2
   - name: 🎯 全球直连
@@ -105,8 +89,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港
-      - 韩国
       - hax2
       - 韩国2
 rules:
