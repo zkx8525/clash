@@ -3,7 +3,7 @@
 #  创建者：https://v2rayse.com
 #  创建时间：2022-07-30 11:58:46
 #  模版：ACL4SSR_Online
-#  节点数量：3
+#  节点数量：5
 #-------------------------------------------------------------#
 #
 mixed-port: 7890
@@ -15,6 +15,7 @@ proxies:
   - {"type":"vmess","name":"韩国2","ws-opts":{"path":"/skdW1Jl","headers":{"host":"ltf.kxking.top"}},"server":"3.36.160.159","port":"443","uuid":"d3b69a94-0282-45bc-88fd-f87df4c453b0","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"香港","ws-opts":{"path":"/RR3I9N4opH","headers":{"host":"echk.kxking.top"}},"server":"43.198.29.185","port":"443","uuid":"4050da0b-a867-492a-a468-5af395c19472","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"asia","ws-opts":{"path":"/kWZp6m","headers":{"host":"wr.kxking.top"}},"server":"20.210.114.129","port":"443","uuid":"3311cb3b-b4b6-4435-9b5e-18e58c4e0758","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"us-vmess","ws-opts":{"path":"/anL7tWf","headers":{"host":"us.kxking.top"}},"server":"198.23.246.240","port":"45001","uuid":"02028961-c54c-4649-b222-1200aca3450f","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -24,6 +25,7 @@ proxy-groups:
       - 韩国2
       - 香港
       - asia
+      - us-vmess
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -33,6 +35,7 @@ proxy-groups:
       - 韩国2
       - 香港
       - asia
+      - us-vmess
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -50,6 +53,7 @@ proxy-groups:
       - 韩国2
       - 香港
       - asia
+      - us-vmess
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -58,6 +62,7 @@ proxy-groups:
       - 韩国2
       - 香港
       - asia
+      - us-vmess
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -66,6 +71,7 @@ proxy-groups:
       - 韩国2
       - 香港
       - asia
+      - us-vmess
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -99,6 +105,7 @@ proxy-groups:
       - 韩国2
       - 香港
       - asia
+      - us-vmess
 rules:
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
