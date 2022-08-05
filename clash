@@ -15,7 +15,7 @@ proxies:
   - {"type":"vmess","name":"韩国2","ws-opts":{"path":"/skdW1Jl","headers":{"host":"ltf.kxking.top"}},"server":"3.36.160.159","port":"443","uuid":"d3b69a94-0282-45bc-88fd-f87df4c453b0","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"香港","ws-opts":{"path":"/RR3I9N4opH","headers":{"host":"echk.kxking.top"}},"server":"43.198.29.185","port":"443","uuid":"4050da0b-a867-492a-a468-5af395c19472","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"asia","ws-opts":{"path":"/kWZp6m","headers":{"host":"wr.kxking.top"}},"server":"20.210.114.129","port":"443","uuid":"3311cb3b-b4b6-4435-9b5e-18e58c4e0758","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"us-vmess","ws-opts":{"path":"/anL7tWf","headers":{"host":"us.kxking.top"}},"server":"198.23.246.240","port":"45001","uuid":"02028961-c54c-4649-b222-1200aca3450f","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"us-vmess","ws-opts":{"path":"/EXho6RBAq2X","headers":{"host":"us.kxking.top"}},"server":"198.23.246.240","port":"4890","uuid":"ace5d554-e3a3-4054-b3c5-786ebc0194f1","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
