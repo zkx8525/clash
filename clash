@@ -5,8 +5,8 @@ mode: Rule
 log-level: info
 external-controller: ':9090'
 proxies:
-  - {name: US, server: us.kxking.top, port: 4892, type: ss, cipher: chacha20-ietf-poly1305, password: wlm2O5rArM, udp: true}
-  - {name: 微软, server: wr.kxking.top, port: 22945, type: ss, cipher: chacha20-ietf-poly1305, password: kaixin100, udp: true}
+  - {name: US, server: us.kxking.top, port: 4892, type: ss, cipher: aes-256-gcm, password: wlm2O5rArM, udp: true}
+  - {name: 微软, server: wr.kxking.top, port: 22945, type: ss, cipher: aes-256-gcm, password: kaixin100, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
