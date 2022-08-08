@@ -8,7 +8,7 @@ proxies:
   - {name: 首选-trojan-US, server: z1889.kxking.top, port: 33446, type: trojan, password: EeJ7fXHaQr, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: US, server: z1889.kxking.top, port: 28471, type: ss, cipher: aes-256-gcm, password: kaixin100, udp: true}
   - {name: 微软, server: wr.kxking.top, port: 22945, type: ss, cipher: aes-256-gcm, password: kaixin100, udp: true}
-  - {name: vmess-US, server: z1889.kxking.top, port: 36183, type: vmess, uuid: 94286378-3017-4121-86cb-afd812ae10ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kx8525.kxking.top}}, udp: true}
+  - {name: vmess-US, server: z1889.kxking.top, port: 36183, type: vmess, uuid: 94286378-3017-4121-86cb-afd812ae10ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: z1889.kxking.top}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
