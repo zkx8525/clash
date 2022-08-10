@@ -97,10 +97,12 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 首选-trojan-US
-      - 首选-韩国
-      - US
-      - vmess-US
+      - 首选-韩国-亚马逊
+      - 首选-香港
+      - 首选加密-trojan-美国
+      - 首选-韩国-微软
+      - 美国-ss
+      - 美国vmess
   - name: 🍎 苹果服务
     type: select
     proxies:
