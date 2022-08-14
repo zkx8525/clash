@@ -5,47 +5,47 @@ mode: Rule
 log-level: info
 external-controller: ':9090'
 proxies:
-  - {name: 首选-韩国-亚马逊, server: wr.kxking.top, port: 443, type: vmess, uuid: 33e73354-b585-430d-885a-91a2075ca1a6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /33e73354-b585-430d-885a-91a2075ca1a6}, udp: true}
+  - {name: 首选-韩国-微软, server: wr.kxking.top, port: 443, type: vmess, uuid: 33e73354-b585-430d-885a-91a2075ca1a6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /33e73354-b585-430d-885a-91a2075ca1a6}, udp: true}
   - {name: 首选-香港, server: hkec.kxking.top, port: 7990, type: trojan, password: b7LQcbiPz343QMM8, tls: ture, skip-cert-verify: true, udp: true}
   - {name: 首选加密-trojan-美国, server: z1889.kxking.top, port: 33446, type: trojan, password: EeJ7fXHaQr, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 首选-韩国-微软, server: wr.kxking.top, port: 22945, type: ss, cipher: aes-256-gcm, password: kaixin100, udp: true}
-  - {name: 美国-ss, server: z1889.kxking.top, port: 28471, type: ss, cipher: aes-256-gcm, password: kaixin100, udp: true}
-  - {name: 美国vmess, server: 54.192.20.93, port: 443, type: vmess, uuid: 94286378-3017-4121-86cb-afd812ae10ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /94286378-3017-4121-86cb-afd812ae10ee, headers: {Host: d1zkzo2qa56pr1.cloudfront.net}}, udp: true}
+  - {name: 美国vmess-cft, server: 54.192.20.93, port: 443, type: vmess, uuid: 94286378-3017-4121-86cb-afd812ae10ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /94286378-3017-4121-86cb-afd812ae10ee, headers: {Host: d1zkzo2qa56pr1.cloudfront.net}}, udp: true}
+  - {name: 美国vmess-cf, server: 8.210.22.35, port: 443, type: vmess, uuid: 94286378-3017-4121-86cb-afd812ae10ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /94286378-3017-4121-86cb-afd812ae10ee, headers: {Host: z1889.kxking.top}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 首选-韩国-亚马逊
-      - 首选-香港
+      - 首选-韩国-微软
+      - 首选-香港-亚马逊
       - 首选加密-trojan-美国
       - 首选-韩国-微软
-      - 美国-ss
-      - 美国vmess
+      - 美国vmess-cft
+      - 美国vmess-cf
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 首选-韩国-亚马逊
-      - 首选-香港
+      - 首选-韩国-微软
+      - 首选-香港-亚马逊
       - 首选加密-trojan-美国
       - 首选-韩国-微软
-      - 美国-ss
-      - 美国vmess
+      - 美国vmess-cft
+      - 美国vmess-cf
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 首选-韩国-亚马逊
-      - 首选-香港
+      - 首选-韩国-微软
+      - 首选-香港-亚马逊
       - 首选加密-trojan-美国
       - 首选-韩国-微软
-      - 美国-ss
-      - 美国vmess
+      - 美国vmess-cft
+      - 美国vmess-cf
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,57 +64,57 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 首选-韩国-亚马逊
-      - 首选-香港
+      - 首选-韩国-微软
+      - 首选-香港-亚马逊
       - 首选加密-trojan-美国
       - 首选-韩国-微软
-      - 美国-ss
-      - 美国vmess
+      - 美国vmess-cft
+      - 美国vmess-cf
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 首选-韩国-亚马逊
-      - 首选-香港
+      - 首选-韩国-微软
+      - 首选-香港-亚马逊
       - 首选加密-trojan-美国
       - 首选-韩国-微软
-      - 美国-ss
-      - 美国vmess
+      - 美国vmess-cft
+      - 美国vmess-cf
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 首选-韩国-亚马逊
-      - 首选-香港
+      - 首选-韩国-微软
+      - 首选-香港-亚马逊
       - 首选加密-trojan-美国
       - 首选-韩国-微软
-      - 美国-ss
-      - 美国vmess
+      - 美国vmess-cft
+      - 美国vmess-cf
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 首选-韩国-亚马逊
-      - 首选-香港
+      - 首选-韩国-微软
+      - 首选-香港-亚马逊
       - 首选加密-trojan-美国
       - 首选-韩国-微软
-      - 美国-ss
-      - 美国vmess
+      - 美国vmess-cft
+      - 美国vmess-cf
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 首选-韩国-亚马逊
-      - 首选-香港
+      - 首选-韩国-微软
+      - 首选-香港-亚马逊
       - 首选加密-trojan-美国
       - 首选-韩国-微软
-      - 美国-ss
-      - 美国vmess
+      - 美国vmess-cft
+      - 美国vmess-cf
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,12 +130,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 首选-韩国-亚马逊
-      - 首选-香港
+      - 首选-韩国-微软
+      - 首选-香港-亚马逊
       - 首选加密-trojan-美国
       - 首选-韩国-微软
-      - 美国-ss
-      - 美国vmess
+      - 美国vmess-cft
+      - 美国vmess-cf
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
