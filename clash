@@ -9,7 +9,7 @@ proxies:
   - {name: 首选-香港-亚马逊, server: hkec.kxking.top, port: 7990, type: trojan, password: b7LQcbiPz343QMM8, tls: ture, skip-cert-verify: true, udp: true}
   - {name: 首选加密-trojan-美国, server: z1889.kxking.top, port: 33446, type: trojan, password: EeJ7fXHaQr, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 韩国-微软, server: wr.kxking.top, port: 22945, type: ss, cipher: aes-256-gcm, password: kaixin100, udp: true}
-  - {name: 美国vmess-cft, server: 54.192.20.93, port: 443, type: vmess, uuid: 94286378-3017-4121-86cb-afd812ae10ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /94286378-3017-4121-86cb-afd812ae10ee, headers: {Host: d1zkzo2qa56pr1.cloudfront.net}}, udp: true}
+  - {name: 美国vmess-cft, server: 54.192.17.97, port: 443, type: vmess, uuid: 94286378-3017-4121-86cb-afd812ae10ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /94286378-3017-4121-86cb-afd812ae10ee, headers: {Host: d1zkzo2qa56pr1.cloudfront.net}}, udp: true}
   - {name: 美国vmess-cf, server: 8.209.252.35, port: 443, type: vmess, uuid: 94286378-3017-4121-86cb-afd812ae10ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /94286378-3017-4121-86cb-afd812ae10ee, headers: {Host: z1889.kxking.top}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
