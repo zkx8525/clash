@@ -32,6 +32,8 @@ proxy-groups:
       - 首选-香港-亚马逊
       - 首选加密-trojan-美国
       - 韩国-微软
+      - 美国vmess-cft
+      - 美国vmess-cf
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -42,8 +44,6 @@ proxy-groups:
       - 首选-香港-亚马逊
       - 首选加密-trojan-美国
       - 韩国-微软
-      - 美国vmess-cft
-      - 美国vmess-cf
   - name: ⛔️ 广告拦截
     type: select
     proxies:
